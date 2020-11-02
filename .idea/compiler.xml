@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="background_manager" />
+        <module name="core" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

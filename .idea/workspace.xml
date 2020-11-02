@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c1f9c3a-f16d-4560-843d-a25e25dee820" name="Default Changelist" comment="" />
+    <list default="true" id="5c1f9c3a-f16d-4560-843d-a25e25dee820" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/exception/SystemErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/util/UserContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/param/BaseParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/po/BasePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/vo/BaseVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/exception/DefaultGlobalExceptionHandlerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/handler/PoMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/interceptor/UserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/项目搭建流程记录.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/study.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/studymd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -16,6 +56,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1jSp3e8LJIp9WhtI17I7w3swP9v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,13 +66,77 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/img" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/web/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\openProject\backgroundmanager\common\web\src\main\java" />
+      <recent name="G:\openProject\backgroundmanager\common\web" />
+      <recent name="G:\openProject\backgroundmanager\common\core\src\main\java\com\example\backgroundmanager\common\core\exception" />
+      <recent name="G:\openProject\background_manager\common\core" />
       <recent name="G:\openProject\background_manager\docs\img" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.backgroundmanager.common.core.util" />
+      <recent name="com.example.backgroundmanager.common.core.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\openProject\background_manager\common" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="backgroundmanager" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="backgroundmanager" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,21 +149,107 @@
       <option name="presentableId" value="Default" />
       <updated>1603807148488</updated>
       <workItem from="1603807165914" duration="4277000" />
-      <workItem from="1603813570660" duration="682000" />
+      <workItem from="1603813570660" duration="1623000" />
+      <workItem from="1603978246971" duration="1329000" />
+      <workItem from="1604022196383" duration="9000" />
+      <workItem from="1604215263236" duration="4873000" />
+      <workItem from="1604324486571" duration="4012000" />
+      <workItem from="1604329331504" duration="3093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="178" key="#HTTP_Proxy" timestamp="1604331960106">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#HTTP_Proxy/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331960106" />
+    <state x="2472" y="178" key="#Project_Structure" timestamp="1604332150846">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332150846" />
+    <state x="2508" y="207" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1604328443389">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2508" y="207" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604328443389" />
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1604330507182">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604330507182" />
+    <state x="2500" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604327255573">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2500" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604327255573" />
+    <state x="2471" y="113" key="CommitChangelistDialog2" timestamp="1604215354769">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2471" y="113" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604215354769" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1603978375494">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603978375494" />
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1604332247083">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332247083" />
+    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1604332247083">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332247083" />
+    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1604332247082">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332247082" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1604332247083">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332247083" />
+    <state x="2460" y="254" key="IDE.errors.dialog" timestamp="1604332024592">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2460" y="254" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332024592" />
+    <state x="2410" y="175" key="Maven.ArtifactSearchDialog" timestamp="1604332520821">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2410" y="175" key="Maven.ArtifactSearchDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332520821" />
+    <state x="2625" y="230" key="RollbackChangesDialog" timestamp="1604215287858">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2625" y="230" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604215287858" />
+    <state x="2381" y="162" key="SettingsEditor" timestamp="1604332018662">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="162" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332018662" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603815703567">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603815703567" />
     <state x="2359" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1603813577683">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2359" y="230" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603813577683" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603814212479">
+    <state x="2254" y="214" key="new project wizard" timestamp="1604332131728">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603814212479" />
+    <state x="2254" y="214" key="new project wizard/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332131728" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604219335794">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604219335794" />
   </component>
 </project>
