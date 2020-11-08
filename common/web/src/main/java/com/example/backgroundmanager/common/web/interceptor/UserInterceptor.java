@@ -1,7 +1,7 @@
 package com.example.backgroundmanager.common.web.interceptor;
 
+import com.example.backgroundmanager.common.core.util.UserContextHolder;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springboot.cloud.common.core.util.UserContextHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.lang.Nullable;

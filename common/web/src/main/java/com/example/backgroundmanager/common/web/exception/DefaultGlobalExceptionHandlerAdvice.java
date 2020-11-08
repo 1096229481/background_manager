@@ -1,8 +1,7 @@
 package com.example.backgroundmanager.common.web.exception;
-
-import com.springboot.cloud.common.core.entity.vo.Result;
-import com.springboot.cloud.common.core.exception.BaseException;
-import com.springboot.cloud.common.core.exception.SystemErrorType;
+import com.example.backgroundmanager.common.core.entity.Result;
+import com.example.backgroundmanager.common.core.exception.BaseException;
+import com.example.backgroundmanager.common.core.exception.SystemErrorType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.HttpStatus;
@@ -12,6 +11,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.multipart.MultipartException;
 
+
+/**
+ * @author as huangzd
+ */
 @Slf4j
 public class DefaultGlobalExceptionHandlerAdvice {
 
