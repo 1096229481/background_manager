@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.websocket.*;
+import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -31,7 +32,7 @@ public class WebSocketServer {
      * 连接建立成功调用的方法
      */
     @OnOpen
-    public void onOpen(Session session) {
+    public void onOpen(Session session,@PathParam("id") String id ) {
         sessionSet.add(session);
         onlineCount.incrementAndGet(); // 在线数加1
         log.info("有新连接加入：{}，当前在线人数为：{}", session.getId(), onlineCount.get());

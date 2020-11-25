@@ -2,9 +2,6 @@
 
 md文件即 Markdown 文件, 也可以在有道云笔记新建markDown，用了几年的有道云都没用过这个。哭...
 
-[参考文档链接](https://www.cnblogs.com/wj-1314/p/8547763.html)
-
-
 ###### 需要在这段文字前面加上 #，再在 # 后加一个空格即可。还可增加二、三、四、五、六级标题，总共六级，
 ##### 只需要增加 # ，增加一个 # ，标题字号相应降低一级
 
@@ -43,3 +40,15 @@ md文件即 Markdown 文件, 也可以在有道云笔记新建markDown，用了�
     在cmd中进入要生成目录结构的目录
     输入：tree /f > list.txt（目录结构输入成功，并保存为一个list.txt文件）
     打开此文件，即可看到生成的目录结构树
+
+#### ```用于添加代码块
+```
+<dependency>
+    <groupId>com.example.backgroundmanager.common</groupId>
+    <artifactId>web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+
+[参考文档链接](https://www.cnblogs.com/wj-1314/p/8547763.html)

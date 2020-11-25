@@ -1,0 +1,10 @@
+custom:
+  liquibase-contexts: "liquibase"
+  changeLog: classpath:liquibase/app/changelog.xml
+
+app:
+  dataSource:
+    url: jdbc:${DATASOURCE_DBTYPE:mysql}://${DATASOURCE_HOST:182.254.208.28}:${DATASOURCE_PORT:3306}/sc_admin?characterEncoding=UTF-8&useUnicode=true&useSSL=false
+    username: ${DATASOURCE_USERNAME:root}
+    password: ${DATASOURCE_PASSWORD:123456}
+    driverClassName: "com.mysql.jdbc.Driver"

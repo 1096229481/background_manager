@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:8071}
+spring:
+  application:
+    name: bus
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${REGISTER_HOST:182.254.208.28}:${REGISTER_PORT:8848}
+      config:
+        server-addr: ${REGISTER_HOST:182.254.208.28}:${REGISTER_PORT:8848}
+        file-extension: yml #对应nacos中配置data Id的后缀
+        namespace: 59884984-5344-476e-b35e-073ac749dc22 #对应nacos的命名空间、
+

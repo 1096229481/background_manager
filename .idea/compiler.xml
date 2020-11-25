@@ -6,13 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core" />
         <module name="web" />
         <module name="websocket" />
+        <module name="bus-server" />
+        <module name="core" />
+        <module name="liquibase" />
+        <module name="organization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="backgroundmanager" target="1.8" />
+      <module name="bus-server" target="1.8" />
+      <module name="center" target="1.8" />
+      <module name="common" target="1.8" />
       <module name="core" target="1.8" />
+      <module name="liquibase" target="1.8" />
+      <module name="organization" target="1.8" />
+      <module name="sysadmin" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="webparent" target="1.8" />
+      <module name="websocket" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="liquibase" options="-parameters" />
+    </option>
   </component>
 </project>

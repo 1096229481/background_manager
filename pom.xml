@@ -11,6 +11,10 @@
     <modules>
         <module>common</module>
         <module>websocket</module>
+        <module>center</module>
+        <module>sysadmin</module>
+        <module>webparent</module>
+        <module>liquibase</module>
     </modules>
 
     <name>background_manager</name>
@@ -28,6 +32,7 @@
         <jetcache-version>2.5.14</jetcache-version>
     </properties>
 
+<!--    多个父依赖 -->
     <dependencyManagement>
         <dependencies>
             <!--支持Spring Boot 2.1.X-->
@@ -98,7 +103,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
-        <!--消息总线-->
+        <!--消息总线 加上会有异常，后续再考虑解决-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.cloud</groupId>-->
 <!--            <artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
@@ -148,4 +153,17 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </profile>
+    </profiles>
 </project>

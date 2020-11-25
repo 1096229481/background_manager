@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<!--    <parent> 因为父项目的打包是springboot打包，但是公共项目并没有main入口，会导致打包异常-->
-<!--        <artifactId>backgroundmanager</artifactId>-->
-<!--        <groupId>com.example</groupId>-->
-<!--        <version>1.0-SNAPSHOT</version>-->
-<!--    </parent>-->
+    <parent>
+        <artifactId>backgroundmanager</artifactId>
+        <groupId>com.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example.backgroundmanager</groupId>
@@ -51,7 +51,7 @@
         </dependency>
 
     </dependencies>
-<!-- depoly 打包上传到私服 -->
+    <!-- depoly 打包上传到私服 -->
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -64,5 +64,18 @@
             <url>http://182.254.208.28:8081/nexus/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <build>
+        <plugins>
+            <!--            当父项目有打包的插件，但是子项目不想用这个打包插件（如：子项目没有启动类的情况下，打包会异常），用这个配置-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

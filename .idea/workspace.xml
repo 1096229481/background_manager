@@ -1,39 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c1f9c3a-f16d-4560-843d-a25e25dee820" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/WebSocketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/controller/WebSocketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/server/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/WebSocket.html" afterDir="false" />
+    <list default="true" id="ec7b4482-25a8-4cfd-9351-3e56bf2db961" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/center/bus-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/src/main/java/com/example/backgroundmanager/center/bus/BusServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/src/main/java/com/example/backgroundmanager/center/bus/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/bus-server/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/center/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/script/restart_bus_server.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/script/start_bus_server.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/script/stop_bus_server.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/example/backgroundmanager/liquibase/LiquibaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/java/com/example/backgroundmanager/liquibase/config/LiquibaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/liquibase/app/changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/liquibase/app/sql/changelog-v1.0.0.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/liquibase/app/table/changelog-v1.0.0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquibase/src/main/resources/liquibase/app/table/changelog-v1.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/db/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/OrganizationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/BusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/MyRedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/config/WebServerMvcConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/GroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/PositionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/ResourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/RoleResourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/dao/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/GroupForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/GroupQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/MenuForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/MenuQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/PositionForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/PositionQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/ResourceForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/ResourceQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/RoleForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/RoleQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/RoleUpdateForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/UserForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/UserQueryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/form/UserUpdateForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/GroupQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/MenuQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/PositionQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/ResourceQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/RoleQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/param/UserQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/RoleResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/po/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/entity/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/events/EventSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/exception/GlobalExceptionHandlerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/exception/OrganizationErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/exception/RoleNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/GroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/PositionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/rest/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IRoleResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/GroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/RoleResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/java/com/example/backgroundmanager/sysadmin/organization/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/organization/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sysadmin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webparent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/CommonWebSocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/MyWebSocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/WebSocketClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/SockJS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/example/backgroundmanager/common/core/entity/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseQueryForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/form/BaseQueryForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/param/BaseParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/param/BaseParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/vo/BaseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/entity/vo/BaseVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/exception/DefaultGlobalExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/exception/DefaultGlobalExceptionHandlerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/handler/PoMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/handler/PoMetaObjectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/interceptor/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/interceptor/UserInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/web/src/main/java/com/example/backgroundmanager/common/web/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/studymd.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/studymd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/项目搭建流程记录.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/项目搭建流程记录.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/controller/WebSocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/controller/WebSocketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/server/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/server/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,14 +157,14 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1jSp3e8LJIp9WhtI17I7w3swP9v" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1kSw8nHZLR6cyanAg4u6rOpK3eU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -64,74 +172,77 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xboot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringWebSocket" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\openProject\backgroundmanager\websocket\src\main\resources" />
-      <recent name="G:\openProject\backgroundmanager\common\web\src\main\java" />
-      <recent name="G:\openProject\backgroundmanager\common\web" />
-      <recent name="G:\openProject\backgroundmanager\common\core\src\main\java\com\example\backgroundmanager\common\core\exception" />
-      <recent name="G:\openProject\background_manager\common\core" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.backgroundmanager.common.core.exception" />
-      <recent name="com.example.backgroundmanager.common.core.util" />
-      <recent name="com.example.backgroundmanager.common.core.entity" />
+      <recent name="com.example.backgroundmanager.websocket.client" />
+      <recent name="com.example.backgroundmanager.liquibase.config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\openProject\background_manager\common" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\openProject\backgroundmanager\websocket\src\main\resources\static" />
+      <recent name="G:\openProject\backgroundmanager\websocket\src\main\resources" />
+      <recent name="G:\openProject\backgroundmanager\docs\compenents" />
+      <recent name="G:\openProject\backgroundmanager\docs\sh" />
+      <recent name="G:\openProject\backgroundmanager\liquibase\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebSocketApplication">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="backgroundmanager" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.backgroundmanager.websocket.client.test" />
+      <module name="websocket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backgroundmanager.websocket.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="backgroundmanager" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <configuration name="BusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bus-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backgroundmanager.center.bus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backgroundmanager.center.bus.BusApplication" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.skipJansi=false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BusServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bus-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backgroundmanager.center.bus.BusServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiquibaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="liquibase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backgroundmanager.liquibase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backgroundmanager.liquibase.LiquibaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrganizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="organization" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backgroundmanager.sysadmin.organization.OrganizationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,23 +260,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="websocket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.backgroundmanager.websocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backgroundmanager.websocket.WebsocketApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.test" />
+      <item itemvalue="Spring Boot.BusServerApplication" />
+      <item itemvalue="Spring Boot.OrganizationApplication" />
+      <item itemvalue="Spring Boot.BusApplication" />
+      <item itemvalue="Spring Boot.LiquibaseApplication" />
+      <item itemvalue="Spring Boot.WebSocketApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.WebSocketApplication" />
-        <item itemvalue="Spring Boot.WebsocketApplication" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Spring Boot.LiquibaseApplication" />
+        <item itemvalue="Spring Boot.BusApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -174,150 +282,124 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5c1f9c3a-f16d-4560-843d-a25e25dee820" name="Default Changelist" comment="" />
-      <created>1603807148488</created>
+      <changelist id="ec7b4482-25a8-4cfd-9351-3e56bf2db961" name="Default Changelist" comment="" />
+      <created>1605707143485</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603807148488</updated>
-      <workItem from="1603807165914" duration="4277000" />
-      <workItem from="1603813570660" duration="1623000" />
-      <workItem from="1603978246971" duration="1329000" />
-      <workItem from="1604022196383" duration="9000" />
-      <workItem from="1604215263236" duration="4873000" />
-      <workItem from="1604324486571" duration="4012000" />
-      <workItem from="1604329331504" duration="3093000" />
-      <workItem from="1604579893235" duration="1221000" />
-      <workItem from="1604669367926" duration="610000" />
-      <workItem from="1604756923246" duration="1839000" />
-      <workItem from="1604815980263" duration="6180000" />
-      <workItem from="1604823454133" duration="11222000" />
+      <updated>1605707143485</updated>
+      <workItem from="1605707148661" duration="6627000" />
+      <workItem from="1605752003919" duration="15617000" />
+      <workItem from="1605787312691" duration="8841000" />
+      <workItem from="1605840822671" duration="4272000" />
+      <workItem from="1605958215743" duration="5213000" />
+      <workItem from="1606220860247" duration="5952000" />
+      <workItem from="1606264824906" duration="5871000" />
+      <workItem from="1606288271955" duration="1892000" />
+      <workItem from="1606303045821" duration="1005000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="2472" y="178" key="#HTTP_Proxy" timestamp="1604331960106">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="361" y="71" key="#SQL_Dialects" timestamp="1605774139504">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2472" y="178" key="#HTTP_Proxy/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331960106" />
-    <state x="2472" y="178" key="#Inspections" timestamp="1604834174385">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1605774139504" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605774133520">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2472" y="178" key="#Inspections/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604834174385" />
-    <state x="2472" y="178" key="#Project_Structure" timestamp="1604842669884">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605774133520" />
+    <state x="450" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606271375656">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2472" y="178" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604842669884" />
-    <state x="2508" y="207" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1604328443389">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="450" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606271375656" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606269029888">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2508" y="207" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604328443389" />
-    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1604330507182">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606269029888" />
+    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606232578453" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606288312836">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604330507182" />
-    <state x="2500" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604327255573">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606288312836" />
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2500" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604327255573" />
-    <state x="2588" y="378" width="614" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604823526905">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605796915245" />
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2588" y="378" width="614" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604823526905" />
-    <state x="2471" y="113" key="CommitChangelistDialog2" timestamp="1604332593889">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605796915245" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2471" y="113" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332593889" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1604824338223">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605796915245" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604824338223" />
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605796915245" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606270643544">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605790266912" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606270643544" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605790266912" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606270643543">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605790266912" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606270643543" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606270643544">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.1.bottom" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="181" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605790266912" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606270643544" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1606233826330">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.1.center" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826330" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1606233826330">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.1.left" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826330" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1606233826329">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state width="1877" height="300" key="GridCell.Tab.1.right" timestamp="1604845119523">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826329" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1606233826330">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604845119523" />
-    <state x="2460" y="254" key="IDE.errors.dialog" timestamp="1604332024592">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606233826330" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605841644639">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2460" y="254" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332024592" />
-    <state x="2410" y="175" key="Maven.ArtifactSearchDialog" timestamp="1604822009164">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605841644639" />
+    <state x="736" y="127" width="981" height="801" key="find.popup" timestamp="1605710911621">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2410" y="175" key="Maven.ArtifactSearchDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604822009164" />
-    <state x="2625" y="230" key="RollbackChangesDialog" timestamp="1604215287858">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="736" y="127" width="981" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605710911621" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606271878846">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2625" y="230" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604215287858" />
-    <state x="2381" y="162" key="SettingsEditor" timestamp="1604826535220">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2381" y="162" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604826535220" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604332597048">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604332597048" />
-    <state x="2359" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1603813577683">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2359" y="230" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603813577683" />
-    <state x="2556" y="119" width="1047" height="801" key="find.popup" timestamp="1604839646993">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2556" y="119" width="1047" height="801" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604839646992" />
-    <state x="2254" y="214" key="new project wizard" timestamp="1604816115035">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2254" y="214" key="new project wizard/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604816115035" />
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604758102425">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604758102425" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604826790616">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604826790616" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606271878846" />
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606229811780" />
   </component>
 </project>
