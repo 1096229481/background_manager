@@ -31,6 +31,8 @@ public class WebSocketConfig {
 
     /**
      * 注入一个客户端
+     *
+     *
      */
     @Bean
     public WebSocketClient webSocketClient() {
