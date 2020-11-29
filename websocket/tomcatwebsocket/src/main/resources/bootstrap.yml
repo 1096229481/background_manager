@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:9091}
+spring:
+  application:
+    name: tomcatWebsocket
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${REGISTER_HOST:182.254.208.28}:${REGISTER_PORT:8848}
+      config:
+        server-addr: ${REGISTER_HOST:182.254.208.28}:${REGISTER_PORT:8848}
+        file-extension: yml

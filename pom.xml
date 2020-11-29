@@ -15,6 +15,7 @@
         <module>sysadmin</module>
         <module>webparent</module>
         <module>liquibase</module>
+        <module>tomcatwebsocket</module>
     </modules>
 
     <name>background_manager</name>

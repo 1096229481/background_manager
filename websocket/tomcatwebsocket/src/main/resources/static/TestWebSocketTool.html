@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8"/>
+<head>
+    <title>欢迎进入websocket测试工具</title>
+    <script src="./js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<p>
+    tomcat版本测试工具
+</p>
+
+
+<div id="uriDiv">
+    url：<input id="url" placeholder="webSocket的url" class="input"/>
+    <br>
+    subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
+    <br>
+    username：<input id="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
+    <br>
+    password：<input id="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
+    <br>
+    <button id="connect" onclick="connect()">连接</button>
+    <button id="disconnect" onclick="disconnect()">断开</button>
+    <button id="clear" onclick="clear()">清空</button>
+</div>
+<br>
+<div id="chatForm">
+    <textarea id="text" rows="4" cols="60" name="text" placeholder="发送消息内容"></textarea>
+    <br>
+    <input id="sendSubscribe" placeholder="发送消息的subscribe" class="input"/>
+    <br>
+    <button id="send" onclick="send()">发送</button>
+    <button id="sendAll" onclick="sendAll()">群发(测试我自己的群发接口)</button>
+</div>
+
+<style type="text/css">
+    .input {
+        width: 500px;
+        height: 30px;
+        margin: 5px;
+    }
+</style>
+<script th:inline="javascript">
+
+    let socket = null;
+
+    function connect() {
+        //链接endpoint名称为 "url" 的endpoint。
+        let url = $('#url').val();
+        console.log("url" + url);
+        socket = new WebSocket(url);
+        socket.onopen = WSonOpen;
+        socket.onmessage = WSonMessage;
+        socket.onclose = WSonClose;
+        socket.onerror = WSonError;
+
+    }
+
+    //连接打开事件
+    function WSonOpen() {
+        console.log("Socket 已打开");
+        socket.send("消息发送测试(From Client)");
+    };
+
+    //收到消息事件
+    function WSonMessage(msg) {
+        console.log(JSON.stringify(msg.data));
+        handleNotification(msg.data);
+    };
+
+    //连接关闭事件
+    function WSonClose() {
+        console.log("Socket已关闭");
+    };
+
+    //发生了错误事件
+    function WSonError() {
+        alert("Socket发生了错误");
+    }
+
+    function disconnect() {
+        if (socket != null) {
+            socket.close();
+            console.log("连接断开")
+        }
+    }
+
+    function clear() {
+        $('#url').val("");
+        $('#username').clear();
+        $('#password').clear();
+        $('#subscribe').clear();
+    }
+
+    function send() {
+        let text = $('#text').val();
+        sendSpittle(text);
+        $('#chatForm').clear();
+    }
+    function handleNotification(message) {
+        $('#output').append("<b>Received: " + message + "</b><br/>")
+    }
+
+    function sendSpittle(text) {
+        socket.send(JSON.stringify(text));
+    }
+
+    function sendAll() {
+        let text = $('#text').val();
+        $.ajax({
+            method : 'GET',
+            url : 'http://localhost:9091/api/websocket/sendAll',
+            data: { "message" : text },
+            dataType: "string",
+            success : function (datas) {
+                console.log(datas.data);
+            }
+        });
+    }
+
+
+</script>
+
+<div id="output"></div>
+</body>
+</html>
