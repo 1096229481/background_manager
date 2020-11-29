@@ -7,23 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec7b4482-25a8-4cfd-9351-3e56bf2db961" name="Default Changelist" comment="测试mac提交">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/TestWebSocketTool.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/jquery-3.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/sockjs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/stomp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/liquibase/src/main/resources/log4j2-spring.xml" afterPath="$PROJECT_DIR$/liquibase/src/main/resources/log4j2-spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/readme.md" afterPath="$PROJECT_DIR$/websocket/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/WebSocketApplication.java" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/WebSocketApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/CommonWebSocketClient.java" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/CommonWebSocketClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/MyWebSocketClient.java" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/MyWebSocketClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/WebSocketClientService.java" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/client/WebSocketClientService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/server/WebSocketServer.java" afterPath="$PROJECT_DIR$/websocket/src/main/java/com/example/backgroundmanager/websocket/server/WebSocketServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/websocket/src/main/resources/bootstrap.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/log4j2-spring.xml" afterPath="$PROJECT_DIR$/websocket/src/main/resources/log4j2-spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/SockJS.html" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/SockJS.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/WebSocket.html" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/WebSocket.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/TestWebSocketTool.html" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/TestWebSocketTool.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/js/jquery-3.1.1.js" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/jquery-3.1.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/js/sockjs.min.js" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/sockjs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/js/stomp.js" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/js/stomp.js" />
     </list>
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/center/target/" />
@@ -414,7 +403,7 @@
       <workItem from="1606303045821" duration="1329000" />
       <workItem from="1606316266338" duration="135000" />
       <workItem from="1606316442296" duration="989000" />
-      <workItem from="1606351904788" duration="9602000" />
+      <workItem from="1606351904788" duration="9692000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1606306567588</created>
@@ -437,11 +426,18 @@
       <option name="project" value="LOCAL" />
       <updated>1606617865325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="测试mac提交">
+      <created>1606617956618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606617956618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10726000" />
+    <option name="totallyTimeSpent" value="10816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
