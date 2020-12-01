@@ -1,45 +1,23 @@
-package com.example.backgroundmanager.websocket.stomp.config;
+package com.xnpe.chat.config;
 
-import com.example.backgroundmanager.websocket.stomp.client.CommonWebSocketClient;
-import lombok.extern.slf4j.Slf4j;
-import org.java_websocket.client.WebSocketClient;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.socket.server.standard.ServerEndpointExporter;
+import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.web.socket.config.annotation.AbstractWebSocketMessageBrokerConfigurer;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
-
-/**
- * @author as huangzd
- */
-@Slf4j
 @Configuration
-public class WebSocketConfig {
+@EnableWebSocketMessageBroker
+public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer{
 
-    /**
-     * 注入一个ServerEndpointExporter,该Bean会自动注册使用@ServerEndpoint注解申明的websocket endpoint
-     */
-    @Bean
-    public ServerEndpointExporter serverEndpointExporter() {
-        return new ServerEndpointExporter();
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.addEndpoint("/Chat").withSockJS();
     }
 
-    /**
-     * 注入一个客户端
-     *
-     *
-     */
-    @Bean
-    public WebSocketClient webSocketClient() {
-        try {
-            CommonWebSocketClient webSocketClient = new CommonWebSocketClient(new URI("ws://localhost:9091/websocket/asset"));
-            webSocketClient.connect();
-            return webSocketClient;
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        return null;
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry registry) {
+        registry.enableSimpleBroker("/queue");
     }
 }

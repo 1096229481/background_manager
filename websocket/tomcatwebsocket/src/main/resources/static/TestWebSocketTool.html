@@ -15,12 +15,12 @@
 <div id="uriDiv">
     url：<input id="url" placeholder="webSocket的url" class="input"/>
     <br>
-    subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
+   <!-- subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
     <br>
     username：<input id="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
     <br>
     password：<input id="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
-    <br>
+    <br>-->
     <button id="connect" onclick="connect()">连接</button>
     <button id="disconnect" onclick="disconnect()">断开</button>
     <button id="clear" onclick="clear()">清空</button>
@@ -29,7 +29,7 @@
 <div id="chatForm">
     <textarea id="text" rows="4" cols="60" name="text" placeholder="发送消息内容"></textarea>
     <br>
-    <input id="sendSubscribe" placeholder="发送消息的subscribe" class="input"/>
+    <!--<input id="sendSubscribe" placeholder="发送消息的subscribe" class="input"/>-->
     <br>
     <button id="send" onclick="send()">发送</button>
     <button id="sendAll" onclick="sendAll()">群发(测试我自己的群发接口)</button>
@@ -44,11 +44,11 @@
 </style>
 <script th:inline="javascript">
 
-    let socket = null;
+    var socket = null;
 
     function connect() {
         //链接endpoint名称为 "url" 的endpoint。
-        let url = $('#url').val();
+        var url = $('#url').val();
         console.log("url" + url);
         socket = new WebSocket(url);
         socket.onopen = WSonOpen;
@@ -95,7 +95,7 @@
     }
 
     function send() {
-        let text = $('#text').val();
+        var text = $('#text').val();
         sendSpittle(text);
         $('#chatForm').clear();
     }
@@ -108,7 +108,7 @@
     }
 
     function sendAll() {
-        let text = $('#text').val();
+        var text = $('#text').val();
         $.ajax({
             method : 'GET',
             url : 'http://localhost:9091/api/websocket/sendAll',

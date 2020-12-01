@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <head>
     <title>欢迎进入websocket测试工具</title>
-    <script th:src="@{sockjs.min.js}"></script>
-    <script th:src="@{stomp.min.js}"></script>
-    <script th:src="@{jquery.js}"></script>
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./js/sockjs.min.js"></script>
+    <script src="./js/stomp.js"></script>
 </head>
 <body>
 <p>
@@ -14,62 +14,57 @@
 </p>
 
 <form id="chatForm">
-    <div id = "uriDiv">
-        url：<input id ="url" placeholder="webSocket的url" class="input"/>
+    <div id="uriDiv">
+        url：<input id="url" placeholder="webSocket的url" class="input"/>
         <br>
-        subscribe：<input id ="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
+        subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
         <br>
-        username：<input id ="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
+        username：<input id="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
         <br>
-        password：<input id ="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
+        password：<input id="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
         <br>
-        <button id ="connect" onclick="connect">连接</button>
-        <button id ="disconnect" onclick="disconnect">断开</button>
-        <button id ="clear" onclick="clear">清空</button>
+        <button id="connect" onclick="connect">连接</button>
+        <button id="disconnect" onclick="disconnect">断开</button>
+        <button id="clear" onclick="clear">清空</button>
     </div>
     <br>
     <textarea rows="4" cols="60" name="text" placeholder="发送消息内容"></textarea>
     <br>
-    <input id ="sendSubscribe" placeholder="发送消息的subscribe" class="input"/>
+    <input id="sendSubscribe" placeholder="发送消息的subscribe" class="input"/>
     <br>
     <input type="submit" value="发送"/>
 
 </form>
 
 <style type="text/css">
-    .input
-    {
+    .input {
         width: 500px;
         height: 30px;
         margin: 5px;
     }
 </style>
 <script th:inline="javascript">
-    $('#chatForm').submit(function(e){
+    $('#chatForm').submit(function (e) {
         e.preventDefault();
         var text = $('#chatForm').find('textarea[name="text"]').val();
         sendSpittle(text);
-        $('#chatForm').clean();
+        $('#chatForm').val("");
     });
 
     var stomp = null;
     var sock = null;
+
     function connect() {
         //链接endpoint名称为 "url" 的endpoint。
-        var url = $('#url').val();
-        if(url.startsWith("ws:")){
-            sock = new WebSocket($('#url').val());
-        }else{
-            sock = new SockJS($('#url').val());
-        }
+        sock = new SockJS($('#url').val());
         stomp.over(sock);
-        stomp.connect($('#username').val(), $('#password').val(), function(frame) {
+        stomp.connect($('#username').val(), $('#password').val(), function (frame) {
             stomp.subscribe($('#subscribe').val(), handleNotification(frame));
         });
     }
 
     function disconnect() {
-        if(stomp!=null){
+        if (stomp != null) {
             stomp.disconnect();
             console.log("连接断开")
         }
@@ -77,7 +72,7 @@
     }
 
     function clear() {
-        $('#url').clean();
+        $('#url').val("");
         $('#username').clean();
         $('#password').clean();
         $('#subscribe').clean();

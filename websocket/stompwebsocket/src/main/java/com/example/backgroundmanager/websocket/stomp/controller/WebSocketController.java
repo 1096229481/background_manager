@@ -1,58 +1,30 @@
 package com.example.backgroundmanager.websocket.stomp.controller;
 
-import com.example.backgroundmanager.websocket.stomp.client.MyWebSocketClient;
-import com.example.backgroundmanager.websocket.stomp.server.WebSocketServer;
-import lombok.extern.slf4j.Slf4j;
+import com.example.backgroundmanager.websocket.stomp.data.Info;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.stereotype.Controller;
 
-import java.io.IOException;
+import java.security.Principal;
 
-/**
- * @author as   huangzd
- */
-@Slf4j
-@RestController
-@RequestMapping("/api/websocket")
-public class WebSocketController {
-    @Autowired
-    private MyWebSocketClient webSocketClient;
+@Controller
+public class
+WebSocketController {
 
     @Autowired
-    private WebSocketServer webSocketServer;
+    private SimpMessagingTemplate messagingTemplate;
 
-    @GetMapping("/sendAll")
-    public String sendAll(String message) {
-        try {
-            webSocketServer.sendMessageToAll(message);
-            log.info("发送消息给全部用户了");
-        } catch (IOException e) {
-            e.printStackTrace();
+    @MessageMapping("/chat")
+    public void handleChat(Principal principal, Info info) {
+        if (principal.getName().equals("Xiao Ming")) {
+            messagingTemplate.convertAndSendToUser("Suby",
+                    "/queue/notification", principal.getName() + " send message to you: "
+                            + info.getInfo());
+        } else {
+            messagingTemplate.convertAndSendToUser("Xiao Ming",
+                    "/queue/notification", principal.getName() + " send message to you: "
+                            + info.getInfo());
         }
-        return "ok";
-    }
-
-    /**
-     * 指定会话ID发消息
-     *
-     * @param message 消息内容
-     * @param id      连接会话ID
-     * @return
-     */
-    @GetMapping(value = "/sendOne")
-    public String sendOneMessage(@RequestParam String message, @RequestParam String id) {
-        webSocketServer.sendMessage(message, id);
-        return "ok";
-    }
-
-
-    @GetMapping("/sendClient")
-    public String sendClient(String message) {
-        webSocketClient.groupSending("测试客户端回复群发");
-        log.info("发送消息给服务端了");
-        return "ok";
     }
 }

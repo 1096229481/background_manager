@@ -11,7 +11,7 @@
 
     <groupId>com.example.backgroundmanager.websocket</groupId>
     <artifactId>tomcatwebsocket</artifactId>
-
+    <packaging>jar</packaging>
 
     <build>
         <plugins>
