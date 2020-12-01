@@ -4,9 +4,9 @@
 <meta charset="UTF-8"/>
 <head>
     <title>欢迎进入websocket测试工具</title>
-    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/sockjs.min.js"></script>
-    <script src="./js/stomp.js"></script>
+    <script src="./js/stomp.min.js"></script>
 </head>
 <body>
 <p>
@@ -48,7 +48,7 @@
         e.preventDefault();
         var text = $('#chatForm').find('textarea[name="text"]').val();
         sendSpittle(text);
-        $('#chatForm').val("");
+        $('#chatForm').clean();
     });
 
     var stomp = null;
@@ -72,7 +72,7 @@
     }
 
     function clear() {
-        $('#url').val("");
+        $('#url').clean();
         $('#username').clean();
         $('#password').clean();
         $('#subscribe').clean();

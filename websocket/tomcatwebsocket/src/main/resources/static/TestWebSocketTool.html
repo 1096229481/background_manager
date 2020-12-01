@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <head>
     <title>欢迎进入websocket测试工具</title>
-    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./js/jquery.js"></script>
 </head>
 <body>
 <p>
@@ -88,16 +88,16 @@
     }
 
     function clear() {
-        $('#url').val("");
-        $('#username').clear();
-        $('#password').clear();
-        $('#subscribe').clear();
+        $('#url').clean();
+        $('#username').clean();
+        $('#password').clean();
+        $('#subscribe').clean();
     }
 
     function send() {
         var text = $('#text').val();
         sendSpittle(text);
-        $('#chatForm').clear();
+        $('#chatForm').clean();
     }
     function handleNotification(message) {
         $('#output').append("<b>Received: " + message + "</b><br/>")
