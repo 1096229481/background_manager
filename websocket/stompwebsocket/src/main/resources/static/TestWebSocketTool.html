@@ -15,20 +15,20 @@
 </p>
 
 
-    <div id="uriDiv">
-        url：<input id="url" placeholder="webSocket的url" class="input"/>
-        <br>
-        subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
-        <br>
-        username：<input id="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
-        <br>
-        password：<input id="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
-        <br>
-        <button id="connect" onclick="connect()">连接</button>
-        <button id="disconnect" onclick="disconnect()">断开</button>
-        <button id="clear" onclick="clear()">清空</button>
-        <br>
-    </div>
+<div id="uriDiv">
+    url：<input id="url" placeholder="webSocket的url" class="input"/>
+    <br>
+    subscribe：<input id="subscribe" placeholder="订阅接收消息的subscribe" class="input"/>
+    <br>
+    username：<input id="username" placeholder="客户端需要验证信息时，所需要的用户名" class="input"/>
+    <br>
+    password：<input id="password" placeholder="客户端需要验证信息时，所需要的密码" class="input"/>
+    <br>
+    <button id="connect" onclick="connect()">连接</button>
+    <button id="disconnect" onclick="disconnect()">断开</button>
+    <button id="clear" onclick="clear()">清空</button>
+    <br>
+</div>
 <form id="chatForm">
     <textarea rows="4" cols="60" name="text" placeholder="发送消息内容"></textarea>
     <br>
@@ -49,27 +49,30 @@
         e.preventDefault();
         var text = $('#chatForm').find('textarea[name="text"]').val();
         sendSpittle(text);
-        $('#chatForm').clean();
+        // $('#chatForm').clear();
     });
 
-    var stomp = null;
+    var stompClient = null;
     var sock = null;
 
-    function connect()  {
+    function connect() {
         console.log("sdfsdf");
         //链接endpoint名称为 "url" 的endpoint。
         sock = new SockJS($('#url').val());
-        stomp = Stomp.over(sock);
+        stompClient = Stomp.over(sock);
+        // info带个人验证的
         // stomp.connect($('#username').val(), $('#password').val(), function (frame) {
-        stomp.connect({}, function (frame) {
-            stomp.subscribe($('#subscribe').val(), handleNotification(frame));
-        })
+        //     stomp.subscribe($('#subscribe').val(), handleNotification(frame));
+        // })
+        stompClient.subscribe($('#subscribe').val(), function (response) {
+            handleNotification(response)
+        });
     }
 
     function disconnect() {
         console.log("sdfsdf");
-        if (stomp != null) {
-            stomp.disconnect();
+        if (stompClient != null) {
+            stompClient.disconnect();
             console.log("连接断开")
         }
 
@@ -88,7 +91,30 @@
     }
 
     function sendSpittle(text) {
-        stomp.send($('sendSubscribe').val(), {}, JSON.stringify(text));
+        stompClient.send($('#sendSubscribe').val(), {}, JSON.stringify(text));
+    }
+
+    //订阅消息
+    function subscribe1() {
+        stompClient.subscribe('/topic/subscribeTest', function (response) {
+            setMessageInnerHTML("已成功订阅/topic/subscribeTest");
+            var returnData = JSON.parse(response.body);
+            setMessageInnerHTML("/topic/subscribeTest 你接收到的消息为:" + returnData.responseMessage);
+        });
+    }
+
+    //订阅消息
+    function subscribe2() {
+        stompClient.subscribe('/topic/sendTest', function (response) {
+            setMessageInnerHTML("已成功订阅/topic/sendTest");
+            var returnData = JSON.parse(response.body);
+            setMessageInnerHTML("/topic/sendTest 你接收到的消息为:" + returnData.responseMessage);
+        });
+    }
+
+    //将消息显示在网页上
+    function setMessageInnerHTML(innerHTML) {
+        document.getElementById('message').innerHTML += innerHTML + '<br/>';
     }
 
 </script>

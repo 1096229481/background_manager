@@ -11,4 +11,5 @@ spring:
         server-addr: ${REGISTER_HOST:182.254.208.28}:${REGISTER_PORT:8848}
         file-extension: yml #对应nacos中配置data Id的后缀
         namespace: 59884984-5344-476e-b35e-073ac749dc22 #对应nacos的命名空间、
+        group: DEFAULT_GROUP #对应nacos的组
 
