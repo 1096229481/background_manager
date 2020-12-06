@@ -64,8 +64,10 @@
         // stomp.connect($('#username').val(), $('#password').val(), function (frame) {
         //     stomp.subscribe($('#subscribe').val(), handleNotification(frame));
         // })
-        stompClient.subscribe($('#subscribe').val(), function (response) {
-            handleNotification(response)
+        stompClient.connect({}, function () {
+            stompClient.subscribe($('#subscribe').val(), function (response) {
+                handleNotification(response)
+            });
         });
     }
 

@@ -4,11 +4,13 @@ import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.config.ConfigService;
 import com.alibaba.nacos.api.exception.NacosException;
+import com.google.common.base.Preconditions;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Properties;
@@ -47,16 +49,44 @@ public class NacosClientController {
         return dataId.toString();
     }
 
-    @GetMapping("/getConfigInfo")
-    public String getConfigInfo() {
+    private ConfigService getConfigService() {
         Properties properties = new Properties();
         properties.put(PropertyKeyConst.SERVER_ADDR, serverAddr);
         properties.put(PropertyKeyConst.NAMESPACE, nameSpace);
         ConfigService configService = null;
         try {
             configService = NacosFactory.createConfigService(properties);
-            String content = configService.getConfig(getDataId(),group,5000L);
-            configService.publishConfig(getDataId(),group,NacosServerConfigBean.CONFIG);
+        } catch (NacosException e) {
+            e.printStackTrace();
+            log.error("获取nacos配置异常");
+        }
+        return configService;
+    }
+
+    @GetMapping("/getConfigInfo")
+    public String getConfigInfo() {
+
+        ConfigService configService = getConfigService();
+        Preconditions.checkNotNull(configService,"获取nacos配置异常");
+        String content = null;
+        try {
+            content = configService.getConfig(getDataId(), group, 5000L);
+        } catch (NacosException e) {
+            e.printStackTrace();
+        }
+        System.out.println(content);
+        return content;
+
+    }
+
+    @GetMapping("/updateConfigInfo")
+    public String updateConfigInfo(@RequestParam String config) {
+        ConfigService configService = getConfigService();
+        Preconditions.checkNotNull(configService,"获取nacos配置异常");
+        try {
+            String content = configService.getConfig(getDataId(), group, 5000L);
+            content = config;
+            boolean b =configService.publishConfig(getDataId(), group, content);
             System.out.println(content);
             return content;
         } catch (NacosException e) {
@@ -65,16 +95,14 @@ public class NacosClientController {
         return null;
     }
 
-    @GetMapping("/updateConfigInfo")
-    public String updateConfigInfo() {
-        Properties properties = new Properties();
-        properties.put(PropertyKeyConst.SERVER_ADDR, serverAddr);
-        properties.put(PropertyKeyConst.NAMESPACE, nameSpace);
-        ConfigService configService = null;
+    @GetMapping("/updateStartWay")
+    public String updateStartWay(@RequestParam String config) {
+        ConfigService configService = getConfigService();
+        Preconditions.checkNotNull(configService,"获取nacos配置异常");
         try {
-            configService = NacosFactory.createConfigService(properties);
-            String content = configService.getConfig(getDataId(),group,5000L);
-            configService.publishConfig(getDataId(),group,NacosServerConfigBean.CONFIG);
+            String content = configService.getConfig(getDataId(), group, 5000L);
+            content = content.replace("ai",config);
+            boolean b =configService.publishConfig(getDataId(), group, content);
             System.out.println(content);
             return content;
         } catch (NacosException e) {
