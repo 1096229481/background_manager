@@ -1,11 +1,11 @@
-spring:
-  profiles:
-    active: dev
-  rabbitmq:
-    host: ${RABBIT_MQ_HOST:182.254.208.28}
-    port: ${RABBIT_MQ_PORT:15672}
-    username: ${RABBIT_MQ_USERNAME:guest}
-    password: ${RABBIT_MQ_PASSWORD:guest}
+#spring:
+#  profiles:
+#    active: dev
+#  rabbitmq:
+#    host: ${RABBIT_MQ_HOST:182.254.208.28}
+#    port: ${RABBIT_MQ_PORT:15672}
+#    username: ${RABBIT_MQ_USERNAME:guest}
+#    password: ${RABBIT_MQ_PASSWORD:guest}
 management:
   endpoints:
     web:

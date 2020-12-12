@@ -17,9 +17,11 @@ import org.springframework.stereotype.Controller;
 @Slf4j
 @Controller
 public class WebSocketController {
+    /**
+     *
+     * 暂时不通，以后再处理
+     */
 
-    @Autowired
-    private SimpMessagingTemplate messagingTemplate;
 
     @MessageMapping("/sendTest")
     @SendTo("/topic/subscribeTest")

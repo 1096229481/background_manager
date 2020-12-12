@@ -4,9 +4,9 @@
 <meta charset="UTF-8"/>
 <head>
     <title>欢迎进入websocket测试工具</title>
-    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-3.1.1.js"></script>
     <script src="./js/sockjs.min.js"></script>
-    <script src="./js/stomp.min.js"></script>
+    <script src="./js/stomp.js"></script>
 
 </head>
 <body>
@@ -58,16 +58,22 @@
     function connect() {
         console.log("sdfsdf");
         //链接endpoint名称为 "url" 的endpoint。
-        sock = new SockJS($('#url').val());
+        // sock = new SockJS($('#url').val());
+        sock = new SockJS('http://localhost:9093/gs-guide-websocket');
         stompClient = Stomp.over(sock);
         // info带个人验证的
         // stomp.connect($('#username').val(), $('#password').val(), function (frame) {
         //     stomp.subscribe($('#subscribe').val(), handleNotification(frame));
         // })
-        stompClient.connect({}, function () {
-            stompClient.subscribe($('#subscribe').val(), function (response) {
+        console.log("333");
+        stompClient.connect({}, function connectCallback(frame) {
+            console.log("sdfsdfsdf"+frame);
+            // stompClient.subscribe($('#subscribe').val(), function (response) {
+            stompClient.subscribe('/topic/subscribeTest', function (response) {
                 handleNotification(response)
             });
+        },function errorCallBack (error) {
+            console.log("error"+error);
         });
     }
 

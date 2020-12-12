@@ -8,10 +8,7 @@ import com.google.common.base.Preconditions;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Properties;
 
@@ -79,22 +76,11 @@ public class NacosClientController {
 
     }
 
-    @GetMapping("/updateConfigInfo")
-    public String updateConfigInfo(@RequestParam String config) {
-        ConfigService configService = getConfigService();
-        Preconditions.checkNotNull(configService,"获取nacos配置异常");
-        try {
-            String content = configService.getConfig(getDataId(), group, 5000L);
-            content = config;
-            boolean b =configService.publishConfig(getDataId(), group, content);
-            System.out.println(content);
-            return content;
-        } catch (NacosException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
+    /**
+     * 不好实现，之后再考虑
+     * @param config
+     * @return
+     */
     @GetMapping("/updateStartWay")
     public String updateStartWay(@RequestParam String config) {
         ConfigService configService = getConfigService();

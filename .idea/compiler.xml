@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web" />
-        <module name="websocket" />
         <module name="bus-server" />
+        <module name="tomcatwebsocket" />
         <module name="core" />
+        <module name="stompwebsocket" />
         <module name="liquibase" />
         <module name="organization" />
       </profile>
@@ -22,7 +23,10 @@
       <module name="core" target="1.8" />
       <module name="liquibase" target="1.8" />
       <module name="organization" target="1.8" />
+      <module name="stompwebsocket" target="1.8" />
       <module name="sysadmin" target="1.8" />
+      <module name="tomcatwebsocket" target="1.8" />
+      <module name="tomcatwebsocket (1) (com.example)" target="1.8" />
       <module name="web" target="1.8" />
       <module name="webparent" target="1.8" />
       <module name="websocket" target="1.8" />

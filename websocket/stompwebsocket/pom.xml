@@ -13,7 +13,6 @@
     <artifactId>stompwebsocket</artifactId>
     <packaging>jar</packaging>
 
-
     <build>
         <plugins>
             <plugin>
