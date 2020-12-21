@@ -17,5 +17,18 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
     </createTable>
 </changeSet>
 
+    <changeSet id="20201219-01" author="huangzd">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="project_info"/>
+            </not>
+        </preConditions>
+        <createTable tableName="project_info">
+            <column name="project_id" type="varchar(64)" encoding="utf8" remarks="项目id">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="project_name" type="varchar(255)" encoding="utf8" remarks="项目名字"/>
+        </createTable>
+    </changeSet>
 
 </databaseChangeLog>
