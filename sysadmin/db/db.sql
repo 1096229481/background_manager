@@ -4,6 +4,9 @@ DROP DATABASE IF EXISTS sc_admin;
 CREATE DATABASE sc_admin DEFAULT CHARSET utf8mb4;
 USE sc_admin;
 
+--已迁移到liquibase中
+
+
 -- 用户组表
 DROP TABLE IF EXISTS groups;
 CREATE TABLE groups

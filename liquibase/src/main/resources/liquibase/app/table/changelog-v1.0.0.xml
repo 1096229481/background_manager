@@ -3,21 +3,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-<changeSet id="20190713-01" author="solo">
-    <preConditions onFail="MARK_RAN">
-        <not>
-            <tableExists tableName="project_info"/>
-        </not>
-    </preConditions>
-    <createTable tableName="project_info">
-        <column name="project_id" type="varchar(64)" encoding="utf8" remarks="项目id">
-            <constraints primaryKey="true" nullable="false"/>
-        </column>
-        <column name="project_name" type="varchar(255)" encoding="utf8" remarks="项目名字"/>
-    </createTable>
-</changeSet>
-
-    <changeSet id="20201219-01" author="huangzd">
+    <changeSet id="20190713-01" author="solo">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="project_info"/>
@@ -30,5 +16,21 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
             <column name="project_name" type="varchar(255)" encoding="utf8" remarks="项目名字"/>
         </createTable>
     </changeSet>
+
+    <changeSet id="20190713-02" author="solo">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="project_info2"/>
+            </not>
+        </preConditions>
+        <sql>
+            CREATE TABLE project_info2
+            (
+            id           VARCHAR(20) PRIMARY KEY COMMENT 'id',
+            parent_id    VARCHAR(20)  NOT NULL COMMENT '用户组父id'
+            ) COMMENT '测试表';
+        </sql>
+    </changeSet>
+
 
 </databaseChangeLog>
