@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 public class BasePo implements Serializable {
     public final static String DEFAULT_USERNAME = "system";
-    @TableId(type = IdType.ID_WORKER_STR)
+    @TableId(type =IdType.ASSIGN_UUID)
     private String id;
 
     @TableField(fill = FieldFill.INSERT)
