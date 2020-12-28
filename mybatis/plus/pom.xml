@@ -11,14 +11,6 @@
 
     <groupId>com.example.backgroundmanager.mybatis</groupId>
     <artifactId>plus</artifactId>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.1</version>
-        </dependency>
 
-    </dependencies>
 
 </project>
