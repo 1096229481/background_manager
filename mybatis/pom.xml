@@ -21,10 +21,13 @@
     <dependencies>
         <dependency>
             <groupId>com.example.backgroundmanager.common</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>web</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+
+
     <build>
         <plugins>
             <!--            当父项目有打包的插件，但是子项目不想用这个打包插件（如：子项目没有启动类的情况下，打包会异常），用这个配置-->
