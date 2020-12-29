@@ -103,15 +103,6 @@
         </dependency>
 -->
 
-        <!--Swagger2 - RESTful API文档-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
 
         <dependency> <!-- 引入log4j2依赖 -->
             <groupId>org.springframework.boot</groupId>

@@ -58,6 +58,17 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--Swagger2 - RESTful API文档-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
